@@ -75,6 +75,28 @@ div.sheet-float-left2
     margin-bottom: -.5em;
 }
 
+div.sheet-def1, div.sheet-def2
+{
+    border:1px solid transparent;
+    margin-bottom: 0em; /* This is the key */
+    font-size:100%;
+    font-weight:bold;
+}
+
+div.sheet-def1
+{
+    float:left; 
+    width:8.3em;
+    text-align:left;
+}
+
+div.sheet-def2
+{
+    float:left; 
+    width:14em;
+    text-align:center;
+}
+
 div.sheet-cs1, div.sheet-cs2, div.sheet-cs3
 {
     border:1px solid transparent;
