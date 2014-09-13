@@ -440,7 +440,7 @@
         </div>
     </div>
     <div class="sheet-newcol">
-        <div class="sheet-section" style="min-height:10.3em;">
+        <div class="sheet-section" style="min-height:11em;">
             <div class="sheet-section-title">Experience Points</div>
             <div class="sheet-subsection">
                 <div class="line">
@@ -482,79 +482,105 @@
                 <div class="line-small"><input type="text" name="attr_Armor_Notes2" style="font-size:85%; width:26.2em; text-align:left;" value="" /></div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:3em">
+        <div class="sheet-section" style="min-height:10.75em">
             <div class="sheet-section-title">Combat Modifiers</div>
             <div class="sheet-subsection">
-                <table>
-                    <tr class="sheet-text-attack">
-                        <td style="font-weight:bold">Range (m)</td>
-                        <td>0-8</td>
-                        <td>9-16</td>
-                        <td>17-32</td>
-                        <td>33-64</td>
-                        <td>65-125</td>
-                        <td>126-250</td>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td style="font-weight:bold">OCV mod</td>
-                        <td>-0</td>
-                        <td>-2</td>
-                        <td>-4</td>
-                        <td>-6</td>
-                        <td>-8</td>
-                        <td>-10</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr class="sheet-text-attack">
-                        <th class="sheet-text-left">Targetting Shot</th>
-                        <th>OCV</th>
-                        <th>Hit Location</th>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td class="sheet-text-left">Head Shot (Head to Shoulders)</td><td>-4</td><td>1d6+3</td>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td class="sheet-text-left">High Shot (Head to Vitals)</td><td>-2</td><td>2d6+1</td>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td class="sheet-text-left">Body Shot (Hands to Legs)</td><td>-1</td><td>2d6+4</td>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td class="sheet-text-left">Low Shot (Shoulder to Feet)</td><td>-2</td><td>2d6+7*</td>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td class="sheet-text-left">Leg Shot (Vitals to Feet)</td><td>-4</td><td>1d6+12</td>
-                    </tr>
-                    <tr class="sheet-text-attack">
-                        <td colspan="3" style="font-style:italic">* Treat a 19 as the Feet Location</td>
-                    </tr>
-                </table>
+                <div class="line">
+                    <div class="cm1" style="font-weight:bold">Range (m)</div>
+                    <div class="cm2">0-8</div>
+                    <div class="cm2">9-16</div>
+                    <div class="cm2">17-32</div>
+                    <div class="cm2">33-64</div>
+                    <div class="cm3">65-125</div>
+                    <div class="cm3">126-250</div>
+                </div>
+                <div class="line">
+                    <div class="cm1" style="font-weight:bold">OCV mod</div>
+                    <div class="cm2">-0</div>
+                    <div class="cm2">-2</div>
+                    <div class="cm2">-4</div>
+                    <div class="cm2">-6</div>
+                    <div class="cm3">-8</div>
+                    <div class="cm3">-10</div>
+                </div>
+                <div class="line">
+                    <div class="cm4" style="font-weight:bold">Targetting Shot</div>
+                    <div class="cm5" style="font-weight:bold">OCV</div>
+                    <div class="cm6" style="font-weight:bold">Hit Location</div>
+                </div>
+                <div class="line">
+                    <div class="cm4">Head Shot (Head to Shoulders)</div>
+                    <div class="cm5">-4</div>
+                    <div class="cm6">1d6+3</div>
+                </div>
+                <div class="line">
+                    <div class="cm4">High Shot (Head to Vitals)</div>
+                    <div class="cm5">-2</div>
+                    <div class="cm6">2d6+1</div>
+                </div>
+                <div class="line">
+                    <div class="cm4">Body Shot (Hands to Legs)</div>
+                    <div class="cm5">-1</div>
+                    <div class="cm6">2d6+4</div>
+                </div>
+                <div class="line">
+                    <div class="cm4">Low Shot (Shoulder to Feet)</div>
+                    <div class="cm5">-2</div>
+                    <div class="cm6">2d6+7*</div>
+                </div>
+                <div class="line">
+                    <div class="cm4">Leg Shot (Vitals to Feet)</div>
+                    <div class="cm5">-4</div>
+                    <div class="cm6">1d6+12</div>
+                </div>
+                <div class="line">
+                    <div class="cm7">* Treat a 19 as the Feet Location</div>
+                </div>
             </div>
         </div>
-         <div class="sheet-section" style="min-height:15.25em;">
+         <div class="sheet-section" style="min-height:14.25em;">
             <div class="sheet-section-title">Movement</div>
             <div class="sheet-subsection">
-                <table>
-                    <tr>
-                        <th class="sheet-text-left">Type</th><th>Combat</th><th>Noncombat</th>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left">Run (12m)</td><td><input type="Text" name="attr_Run_Combat" style="width:6em; font-size:100%;" value="12m" /></td><td><input type="Text" name="attr_Run_Noncombat" style="width:6em; font-size:100%;" value="24m" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left">Swim (4m)</td><td><input type="Text" name="attr_Swim_Combat" style="width:6em; font-size:100%;" value="4m" /></td><td><input type="Text" name="attr_Swim_Noncombat" style="width:6em; font-size:100%;" value="8m" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left">H. Leap (4m)</td><td><input type="Text" name="attr_HLeap_Combat" style="width:6em; font-size:100%;" value="4m" /></td><td><input type="Text" name="attr_HLeap_Noncombat" style="width:6em; font-size:100%;" value="8m" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left">V. Leap (2m)</td><td><input type="Text" name="attr_VLeap_Combat" style="width:6em; font-size:100%;" value="2m" /></td><td><input type="Text" name="attr_VLeap_Noncombat" style="width:6em; font-size:100%;" value="4m" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left"><input type="Text" name="attr_Spec_Move1" style="width:8em; font-size:100%;" value="" /></td><td><input type="Text" name="attr_Spec_Move1_Combat" style="width:6em; font-size:100%;" value="" /></td><td><input type="Text" name="attr_Spec_Move1_Noncombat" style="width:6em; font-size:100%;" value="" /></td>
-                    </tr>
-                </table>
+                <div class="line">
+                    <div class="mv1" style="font-weight:bold">Type</div>
+                    <div class="mv2" style="font-weight:bold">Combat</div>
+                    <div class="mv2" style="font-weight:bold">Noncombat</div>
+                </div>
+                <div class="line">
+                    <div class="mv1">Run (12m)</div>
+                    <div class="mv2"><input type="Text" name="attr_Run_Combat" style="width:6.7em;" value="12m" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Run_Noncombat" style="width:6.7em;" value="24m" /></div>
+                </div>
+                <div class="line">
+                    <div class="mv1">Swim (4m)</div>
+                    <div class="mv2"><input type="Text" name="attr_Swim_Combat" style="width:6.7em;" value="4m" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Swim_Noncombat" style="width:6.7em;" value="8m" /></div>
+                </div>
+                <div class="line">
+                    <div class="mv1">H. Leap (4m)</div>
+                    <div class="mv2"><input type="Text" name="attr_HLeap_Combat" style="width:6.7em;" value="4m" /></div>
+                    <div class="mv2"><input type="Text" name="attr_HLeap_Noncombat" style="width:6.7em;" value="8m" /></div>
+                </div>
+                <div class="line">
+                    <div class="mv1">V. Leap (2m)</div>
+                    <div class="mv2"><input type="Text" name="attr_VLeap_Combat" style="width:6.7em;" value="2m" /></div>
+                    <div class="mv2"><input type="Text" name="attr_VLeap_Noncombat" style="width:6.7em;" value="4m" /></div>
+                </div>
+                <div class="line">
+                    <div class="mv1"><input type="Text" name="attr_Spec_Move1" style="width:8.7em;" value="" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Spec_Move1_Combat" style="width:6.7em;" value="" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Spec_Move1_Noncombat" style="width:6.7em;" value="" /></div>
+                </div>
+                <div class="line">
+                    <div class="mv1"><input type="Text" name="attr_Spec_Move2" style="width:8.7em;" value="" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Spec_Move2_Combat" style="width:6.7em;" value="" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Spec_Move2_Noncombat" style="width:6.7em;" value="" /></div>
+                </div>
+                <div class="line">
+                    <div class="mv1"><input type="Text" name="attr_Spec_Move3" style="width:8.7em;" value="" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Spec_Move3_Combat" style="width:6.7em;" value="" /></div>
+                    <div class="mv2"><input type="Text" name="attr_Spec_Move3_Noncombat" style="width:6.7em" value="" /></div>
+                </div>
             </div>
         </div>
     </div>

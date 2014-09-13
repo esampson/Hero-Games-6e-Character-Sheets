@@ -75,10 +75,93 @@ div.sheet-float-left2
     margin-bottom: -.5em;
 }
 
+div.sheet-mv1, div.sheet-mv2, div.sheet-mv3
+{
+    border:1px solid transparent;
+    margin-bottom: -.5em; /* This is the key */
+    font-size:100%;
+}
+
+div.sheet-mv1
+{
+    float:left; 
+    width:8.7em;
+    text-align:left;
+}
+
+div.sheet-mv2
+{
+    float:left; 
+    width:6.7em;
+    text-align:center;
+}
+
+div.sheet-mv3
+{
+    float:left; 
+    width:3.9em;
+    text-align:center;
+}
+div.sheet-cm1, div.sheet-cm2, div.sheet-cm3, div.sheet-cm4, div.sheet-cm5, div.sheet-cm6, div.sheet-cm7
+{
+    border:1px solid transparent;
+    margin-bottom: -1.15em; /* This is the key */
+    font-size:80%;
+}
+
+div.sheet-cm1
+{
+    float:left; 
+    width:6.2em;
+    text-align:center;
+}
+
+div.sheet-cm2
+{
+    float:left; 
+    width:3.2em;
+    text-align:center;
+}
+
+div.sheet-cm3
+{
+    float:left; 
+    width:3.9em;
+    text-align:center;
+}
+
+div.sheet-cm4
+{
+    float:left; 
+    width:17.2em;
+    text-align:left;
+}
+
+div.sheet-cm5
+{
+    float:left; 
+    width:2.9em;
+    text-align:center;
+}
+
+div.sheet-cm6
+{
+    float:left; 
+    width:7.5em;
+    text-align:center;
+}
+
+div.sheet-cm7
+{
+    width:28em;
+    text-align:center;
+    font-style:italic;
+}
+
 div.sheet-pts1, div.sheet-pts2
 {
     border:1px solid transparent;
-    margin-bottom: 0em; /* This is the key */
+    margin-bottom: .5em; /* This is the key */
     font-size:100%;
 }
 
