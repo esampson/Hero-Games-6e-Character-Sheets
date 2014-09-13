@@ -1,0 +1,346 @@
+td, th
+{
+    border:1px solid green;
+}
+
+input[type=number]
+{
+    padding: 0;
+    margin:0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    box-shadow: none;
+    font-size:100%; 
+    text-align: center;
+ 
+}
+
+input[type=text]
+{
+    padding: 0;
+    margin:0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    box-shadow: none;
+    font-size:100%; 
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+{ 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] 
+{
+    -moz-appearance:textfield;
+}
+
+div.sheet-line, div.sheet-line-small, div.sheet-line-cha, div.sheet-line-am
+{
+    border:none; 
+    padding:0; 
+    clear: left;
+}
+
+div.sheet-line
+{
+    margin-top: -.5em;
+}
+
+div.sheet-line-cha
+{
+    padding-top:.3em
+} 
+
+div.sheet-line-am
+{
+    margin-top: -.5em;
+    margin-bottom: -.95em;
+}
+
+div.sheet-float-left
+{
+    float:left; 
+    border:1px solid transparent;
+    margin-bottom: -.5em;
+}
+
+div.sheet-float-left2
+{
+    float:left; 
+    border:none;
+    margin-bottom: -.5em;
+}
+
+div.sheet-cs1, div.sheet-cs2, div.sheet-cs3
+{
+    border:1px solid transparent;
+    margin-bottom: .5em; /* This is the key */
+    font-size:100%;
+}
+
+div.sheet-cs1
+{
+    float:left; 
+    width:5em;
+    text-align:left;
+}
+
+div.sheet-cs2
+{
+    float:left; 
+    width:8.5em;
+    text-align:center;
+}
+
+div.sheet-am1, div.sheet-am2, div.sheet-am3, div.sheet-am4, div.sheet-am5
+{
+    border:1px solid transparent;
+    margin-bottom: -1.05em; /* This is the key */
+    font-size:76%;
+}
+
+.sheet-cha1, .sheet-cha2, .sheet-cha3, .sheet-cha4
+{
+    border:1px solid transparent;
+    margin-bottom: -.9em;
+    font-size:100%;
+}
+
+div.sheet-am1, input.sheet-am1
+{
+    float:left; 
+    width:7em;
+    text-align:left;
+}
+
+div.sheet-am2, input.sheet-am2
+{
+    float:left; 
+    width:3em;
+    text-align:center;
+}
+
+div.sheet-am3, input.sheet-am3
+{
+    float:left; 
+    width:2.5em;
+    text-align:center;
+}
+
+div.sheet-am4, input.sheet-am4
+{
+    float:left; 
+    width:2.2em;
+    text-align:center;
+}
+
+div.sheet-am5, input.sheet-am5
+{
+    float:left; 
+    width:13em;
+    text-align:left;
+}
+
+div.sheet-cha1
+{
+    float:left; 
+    width:5.5em;
+    text-align:center;
+}
+
+div.sheet-cha2
+{
+    float:left; 
+    width:3.5em;
+    text-align:left;
+    font-weight:bold;
+}
+
+div.sheet-cha3
+{
+    float:left; 
+    width:5.2em;
+    text-align:center;
+}
+
+div.sheet-cha4
+{
+    float:left; 
+    width:7.4em;
+    text-align:center;
+}
+
+div.sheet-hl1,div.sheet-hl2,div.sheet-hl3,div.sheet-hl4,div.sheet-hl5,div.sheet-hl6,div.sheet-hl7,div.sheet-hl8,div.sheet-hl9,div.sheet-hl10,div.sheet-hl11,div.sheet-hl12,div.sheet-hl13,div.sheet-hl14,div.sheet-hl15,div.sheet-hl16,div.sheet-hl17,div.sheet-hl18,div.sheet-hl19,div.sheet-hl20,div.sheet-hl21
+{
+    border:1px solid transparent;
+    margin-bottom: -.95em;
+    font-size:85%;
+}
+
+div.sheet-hl1
+{
+    float:left; 
+    width:2.9em;
+    text-align:center;
+}
+
+div.sheet-hl2
+{
+    float:left; 
+    width:4.7em;
+    text-align:left;
+}
+
+div.sheet-hl3
+{
+    float:left; 
+    width:3.4em;
+    text-align:center;
+}
+
+div.sheet-hl4
+{
+    float:left; 
+    width:1.8em;
+    text-align:center;
+}
+
+div.sheet-hl5
+{
+    float:left; 
+    width:2.1em;
+    text-align:center;
+}
+
+div.sheet-hl6
+{
+    float:left; 
+    width:.6em;
+    text-align:center;
+}
+div.sheet-hl7
+{
+    float:left; 
+    width:5.3em;
+    text-align:center;
+}
+
+div.sheet-hl8
+{
+    float:left; 
+    width:9em;
+    text-align:center;
+    font-weight:bold;
+}
+
+div.sheet-hl9
+{
+    float:left; 
+    width:5.2em;
+    text-align:center;
+}
+
+div.sheet-hl20
+{
+    float:left; 
+    width:7.8em;
+    text-align:center;
+    font-weight:bold;
+}
+div.sheet-hl21
+{
+    float:left; 
+    width:18em;
+    text-align:left;
+}
+
+tr.sheet-normal {
+    border:none;
+}
+
+div.sheet-newcol {
+    padding:0px; 
+    margin:0px;
+    width:33%;
+    float:left;
+}
+
+div.sheet-section {
+    border: .2em solid black;
+    border-radius: 1em;
+    font-size: 85%;
+    margin-bottom: 1em;
+    margin-left:1em;
+}
+
+div.sheet-subsection {
+    padding-top: .5em;
+    padding-left:.5em;
+    padding-right: .5em;
+}
+
+div.sheet-section-title {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: .2em solid black;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px 0 0 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+th.sheet-text-left
+{
+    margin: 0px 0 0 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+td.sheet-header
+{
+    width: 66%;
+    /* border: 1px solid #a8a8a8; */
+    text-align: left;
+    padding-left:1em;
+}
+
+td.sheet-logo
+{
+    text-align: center;
+    width: 33%;
+    /* border: 1px solid #a8a8a8; */
+    margin: 0px 0 0 0px;
+    padding: 5px;
+}
+
+td.sheet-text-left
+{
+    margin: 0px 0 0 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+tr.sheet-text-attack
+{
+    line-height: 1em;
+    /* border: 1px solid #a8a8a8; */
+    font-size: 0.8em;
+    margin: 0px 0 0 0px;
+}
+
+input.sheet-text-attack
+{
+    line-height: 1em;
+    /* border: 1px solid #a8a8a8; */
+    font-size: 1em;
+    margin: 0px 0 0 0px;
+}

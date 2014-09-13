@@ -1,0 +1,883 @@
+<div style="width:100%">
+    <div style="width:66%; float:left;">
+        <div class="line-cha"><div style="margin:0; padding:0; padding-left:1em; float:left; border:1px solid transparent">Character Name: </div><input type="text" name="attr_Name_tag" value="" style="width:30em; text-align:left"/></div>
+        <div class="line-cha"><div style="margin:0; padding:0; padding-left:1em; float:left; border:1px solid transparent">Alternate Identities: </div><input type="text" name="attr_Alt_IDs" value="" style="width:30em; text-align:left"/></div>
+        <div class="line-cha"><div style="margin:0; padding:0; padding-left:1em; float:left; border:1px solid transparent">Player Name: </div><input type="text" name="attr_Player_tag" value="" style="width:30em; text-align:left"/></div>
+    </div>
+    <div style="width:33%; float:right; text-align:center; vertical-align:middle">
+        <img src="http://www.herogames.com/forums/public/style_images/1_hero_logo.png">
+    </div>
+</div>
+<div class="sheet-3colrow">
+    <div class="sheet-newcol">
+        <div class="sheet-section" style="min-height:28em;">
+            <div class="sheet-section-title">Characteristics</div>
+            <div class="sheet-subsection">
+                <div class="line-cha">
+                    <div class="cha1" style="font-weight: bold">Val</div>
+                    <div class="cha2" style="font-weight: bold">Char</div>
+                    <div class="cha3" style="font-weight: bold">Points</div>
+                    <div class="cha4" style="font-weight: bold">Roll</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_STR" value="10"></div>
+                    <div class="cha2">STR</div>
+                    <div class="cha3"><input type="number" name="attr_STR_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_STR_roll" value="round(@{STR}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_DEX" value="10"></div>
+                    <div class="cha2">DEX</div>
+                    <div class="cha3"><input type="number" name="attr_DEX_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_DEX_roll" value="round(@{DEX}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_CON" value="10"></div>
+                    <div class="cha2">CON</div>
+                    <div class="cha3"><input type="number" name="attr_CON_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_CON_roll" value="round(@{CON}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_INT" value="10"></div>
+                    <div class="cha2">INT</div>
+                    <div class="cha3"><input type="number" name="attr_INT_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_INT_roll" value="round(@{INT}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_EGO" value="10"></div>
+                    <div class="cha2">EGO</div>
+                    <div class="cha3"><input type="number" name="attr_EGO_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_EGO_roll" value="round(@{EGO}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_PRE" value="10"></div>
+                    <div class="cha2">PRE</div>
+                    <div class="cha3"><input type="number" name="attr_PRE_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_PRE_roll" value="round(@{PRE}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_OCV" value="3"></div>
+                    <div class="cha2">OCV</div>
+                    <div class="cha3"><input type="number" name="attr_OCV_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_DCV" value="3"></div>
+                    <div class="cha2">DCV</div>
+                    <div class="cha3"><input type="number" name="attr_DCV_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_OMCV" value="3"></div>
+                    <div class="cha2">OMCV</div>
+                    <div class="cha3"><input type="number" name="attr_OMCV_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_DMCV" value="3"></div>
+                    <div class="cha2">DMCV</div>
+                    <div class="cha3"><input type="number" name="attr_DMCV_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_SPD" value="2"></div>
+                    <div class="cha2">SPD</div>
+                    <div class="cha3"><input type="number" name="attr_SPD_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_PD" value="2"></div>
+                    <div class="cha2">PD</div>
+                    <div class="cha3"><input type="number" name="attr_PD_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_ED" value="2"></div>
+                    <div class="cha2">ED</div>
+                    <div class="cha3"><input type="number" name="attr_ED_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_REC" value="4"></div>
+                    <div class="cha2">REC</div>
+                    <div class="cha3"><input type="number" name="attr_REC_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_END_max" value="20"></div>
+                    <div class="cha2">END</div>
+                    <div class="cha3"><input type="number" name="attr_END_cost" value="0"></div>
+                    <div class="cha4">&nbsp;</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_BODY_max" value="10"></div>
+                    <div class="cha2">BODY</div>
+                    <div class="cha3"><input type="number" name="attr_BODY_cost" value="0"></div>
+                    <div class="cha4" style="font-weight:bold">Total Cost</div>
+                </div>
+                <div class="line-cha">
+                    <div class="cha1"><input type="number" name="attr_STUN_max" value="20"></div>
+                    <div class="cha2">STUN</div>
+                    <div class="cha3"><input type="number" name="attr_STUN_cost" value="0"></div>
+                    <div class="cha4"><input type="number" name="attr_CHA_Total" value="@{STR_cost}+@{DEX_cost}+@{CON_cost}+@{INT_Cost}+@{EGO_cost}+@{PRE_cost}+@{OCV_cost}+@{DCV_cost}+@{OMCV_cost}+@{DMCV_cost}+@{SPD_cost}+@{PD_cost}+@{ED_cost}+@{REC_cost}+@{END_cost}+@{BODY_cost}+@{STUN_cost}" disabled="true" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="sheet-section" style="min-height:31.75em;">
+            <div class="sheet-section-title">Attacks & Maneuvers</div>
+            <div class="sheet-subsection">
+                <div class="line-am">
+                    <div class="am1" style="font-weight: bold">Maneuver</div>
+                    <div class="am2" style="font-weight: bold">Phase</div>
+                    <div class="am3" style="font-weight: bold">OCV</div>
+                    <div class="am4" style="font-weight: bold">DCV</div>
+                    <div class="am5" style="font-weight: bold">Effects</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Block</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">+0</div>
+                    <div class="am4">+0</div>
+                    <div class="am5">Block, Abort</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Brace</div>
+                    <div class="am2">0</div>
+                    <div class="am3">+2</div>
+                    <div class="am4">&#189;</div>
+                    <div class="am5">+2 OCV vs. R. Mod</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Disarm</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">-2</div>
+                    <div class="am4">+0</div>
+                    <div class="am5">Disarm, STR v. STR</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Dodge</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">+0</div>
+                    <div class="am4">+3</div>
+                    <div class="am5">Abort, vs. all attacks</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Grab</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">-1</div>
+                    <div class="am4">-1</div>
+                    <div class="am5">Grab 2 limbs</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Grab By</div>
+                    <div class="am2">&#189;†</div>
+                    <div class="am3">+0</div>
+                    <div class="am4">+0</div>
+                    <div class="am5">Move & Grab; +(v/10) to STR</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Haymaker</div>
+                    <div class="am2">&#189;*</div>
+                    <div class="am3">+0</div>
+                    <div class="am4">-5</div>
+                    <div class="am5">+4 DCs to attack</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Move By</div>
+                    <div class="am2">&#189;†</div>
+                    <div class="am3">-2</div>
+                    <div class="am4">-2</div>
+                    <div class="am5">STR/2 + v/10; you take &#8531;</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Move Through</div>
+                    <div class="am2">&#189;†</div>
+                    <div class="am3">-v/10</div>
+                    <div class="am4">-3</div>
+                    <div class="am5">STR + v/6; you take &#189; or full</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Multiple Attack</div>
+                    <div class="am2">1</div>
+                    <div class="am3">var</div>
+                    <div class="am4">&#189;</div>
+                    <div class="am5">Attack multiple times</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Set</div>
+                    <div class="am2">1</div>
+                    <div class="am3">+1</div>
+                    <div class="am4">+0</div>
+                    <div class="am5">Ranged attacks only</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Shove</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">-1</div>
+                    <div class="am4">-1</div>
+                    <div class="am5">Push 1m per 5 STR</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Strike</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">+0</div>
+                    <div class="am4">+0</div>
+                    <div class="am5">STR or Weapon</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Throw</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">+0</div>
+                    <div class="am4">+0</div>
+                    <div class="am5">Throw w/ STR dmg</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1">Trip</div>
+                    <div class="am2">&#189;</div>
+                    <div class="am3">-1</div>
+                    <div class="am4">-2</div>
+                    <div class="am5">Knock target prone</div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man1" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase1" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV1" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV1" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff1" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man2" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase2" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV2" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV2" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff2" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man3" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase3" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV3" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV3" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff3" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man4" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase4" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV4" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV4" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff4" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man5" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase5" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV5" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV5" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff5" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man6" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase6" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV6" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV6" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff6" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man7" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase7" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV7" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV7" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff7" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man8" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase8" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV8" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV8" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff8" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man9" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase9" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV9" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV9" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff9" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man10" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase10" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV10" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV10" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff10" value="" /></div>
+                </div>
+                <div class="line-am">
+                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man11" value="" /></div>
+                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase11" value="" /></div>
+                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV11" value="" /></div>
+                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV11" value="" /></div>
+                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff11" value="" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-newcol">
+        <div class="sheet-section" style="min-height:11em;">
+            <div class="sheet-section-title">Current Status</div>
+            <div class="sheet-subsection">
+                <div class="line">
+                    <div class="cs1">&nbsp;</div>
+                    <div class="cs2" style="font-weight:bold">Maximum</div>
+                    <div class="cs2" style="font-weight:bold">Current</div>
+                </div>
+                <div class="line">
+                    <div class="cs1">END</div>
+                    <div class="cs2"><input style="width:3em;" type="number" name="attr_END_max_show" disabled="true" value="@{END|max}" /></div>
+                    <div class="cs2"><input style="width:3em;" type="number" name="attr_END_show" disabled="true"  value="@{END}" /></div>
+                </div>
+                <div class="line">
+                    <div class="cs1">BODY</div>
+                    <div class="cs2"><input style="width:3em;" type="number" name="attr_BODY_max_show" disabled="true" value="@{BODYax}" /></div>
+                    <div class="cs2"><input style="width:3em;" type="number" name="attr_BODY_show" disabled="true"  value="@{BODY}" /></div>
+                </div>
+                <div class="line">
+                    <div class="cs1">STUN</div>
+                    <div class="cs2"><input style="width:3em;" type="number" name="attr_STUN_max_show" disabled="true" value="@{STUN|max}" /></div>
+                    <div class="cs2"><input style="width:3em;" type="number" name="attr_STUN_show" disabled="true"  value="@{STUN}" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="sheet-section" style="min-height:15.6em;">
+            <div class="sheet-section-title">Vital Information</div>
+            <div class="sheet-subsection">
+                <div class="line">
+                    <div class="float-left" style="width:12em;"><span style="font-weight:bold">HTH damage</span> (STR/5)d6 </div>
+                    <input type="text" name="attr_HTH" style="width:10em; text-align:left" value="" />
+                </div>
+                <div class="line">
+                    <div class="float-left" style="width:2em">Lift</div>
+                    <div class="float-left" style="width:10em"><input type="text" name="attr_Lift" style="width:10em" value="" /></div>
+                    <div class="float-left" style="width:7em">STR END Cost </div>
+                    <div class="float-left" style="width:3em"><input type="text" name="attr_STR_END" style="width:3em;" value="" /></div>
+                </div>
+                <div class="line">
+                    <div class="float-left" style="width:3em; font-weight:bold">Phase</div>
+                    <input type="text" name="attr_Phases_display" style="width:19em; text-align:center; font-size:100%; margin-top:-.3em;" value=""  />
+                </div>
+                <div class="line">
+                    <div class="float-left" style="width:5em; font-weight:bold">Base OCV</div>
+                    <input type="text" name="attr_OCV_show" style="width:6em" value="" />
+                    <div class="float-left" style="width:5em; font-weight:bold">Base DCV</div>
+                    <input type="text" name="attr_DCV_show" style="width:6em;" value="" />
+                </div>
+                <div class="line">
+                    <div class="float-left" style="width:10em; font-weight:bold">Combat Skill Levels</div>
+                    <input type="text" name="attr_CSL_show1" style="width:12em; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" name="attr_CSL_show2" style="width:22em; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" name="attr_CSL_show3" style="width:22em; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" name="attr_CSL_show4" style="width:22em; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" name="attr_CSL_show5" style="width:22em; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <div class="float-left" style="width:13em"><span style="font-weight:bold">Presence Attack</span> (PRE/5)d6 </div>
+                    <input type="text" name="attr_PRE_Attack" style="width:9em" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="sheet-section" style="min-height:17.6em;">
+            <div class="sheet-section-title">Defenses</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount/Effect</th>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Normal PD</td><td><input type="text" name="attr_Normal_PD" style="width:12em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Resistant PD</td><td><input type="text" name="attr_Resist_PD" style="width:12em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Normal ED</td><td><input type="text" name="attr_Normal_ED" style="width:12em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Resistant ED</td><td><input type="text" name="attr_Resist_eD" style="width:12em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Mental Defense</td><td><input type="text" name="attr_MD" style="width:12em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Power Defense</td><td><input type="text" name="attr_POWD" style="width:12em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Flash Defense</td><td><input type="text" name="attr_FlashD" style="width:12em" value="" /></td>
+                    </tr>
+                </table>
+                <div class="line"><input type="text" name="attr_SpecDef1" style="width:22em; text-align:left;" value="" /></div>
+                <div class="line"><input type="text" name="attr_SpecDef2" style="width:22em; text-align:left;" value="" /></div>
+            </div>
+        </div>
+        <div class="sheet-section" style="min-height:9.75em;">
+            <div class="sheet-section-title">Senses</div>
+            <div class="sheet-subsection">
+                <div class="line"><div class="float-left" style="width:13em"><span style="font-weight:bold">Perception Roll</span> (9+INT/5)</div> <input type="text" name="attr_Per" style="width:9em;" value="" /></div>
+                <div class="line"><div class="float-left" style="width:16em"><span style="font-weight:bold">Enhanced and Unusual Senses</span></div><input type="text" name="attr_EnhancedSense1" style="width:6em; text-align:left;" value="" /></div>
+                <div class="line"><input type="text" name="attr_EnhancedSense2" style="width:22em; text-align:left;" value="" /></div>
+                <div class="line"><input type="text" name="attr_EnhancedSense3" style="width:22em; text-align:left;" value="" /></div>
+                <div class="line"><input type="text" name="attr_EnhancedSense4" style="width:22em; text-align:left;" value="" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-newcol">
+        <div class="sheet-section" style="min-height:8em;">
+            <div class="sheet-section-title">Experience Points</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Total Points</td><td><input type="number" name="attr_Total_Points" style="width:9em;" value="@{CHA_Total}+@{Skill_Total}+@{Pow_Total}" disabled="true" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left" style="font-weight:bold">Total Experience Points</td><td><input type="number" name="attr_XP_Total" style="width:9em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left">Experience Spent</td><td><input type="number" name="attr_XP_Spent" style="width:9em;" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left">Experience Unspent</td><td><input type="number" name="attr_XP_Unspent" style="width:9em;" value="" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="sheet-section" style="min-height:21em;">
+            <div class="sheet-section-title">Hit Location Chart</div>
+            <div class="sheet-subsection">
+                <div class="line-small"><div class="hl1" style="font-weight:bold; line-height:1em">3d6 Roll</div><div class="hl2" style="font-weight:bold; height:2em; vertical-align:middle">Location</div><div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Stun<br>X</div><div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">N<br>Stun</div><div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Body<br>X</div><div class="hl4" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">To<br>Hit</div><div class="hl7" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Defense/<br>Weight</div></div>
+                <div class="line-small" style="line-height:.5em">&nbsp;</div>
+                <div class="line-small"><div class="hl1">3-5</div><div class="hl2">Head</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Head_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Head_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">6</div><div class="hl2">Hands</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Hands_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Hands_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">7-8</div><div class="hl2">Arms</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Arms_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Arms_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">9</div><div class="hl2">Shoulder</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Shoulders_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Shoulders_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">10-11</div><div class="hl2">Chest</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Chest_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Chest_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">12</div><div class="hl2">Stomach</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Stomach_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Stomach_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">13</div><div class="hl2">Vitals</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Vitals_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Vitals_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">14</div><div class="hl2">Thighs</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Thighs_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Thighs_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">15-16</div><div class="hl2">Legs</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Legs_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Legs_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">17-18</div><div class="hl2">Feet</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Feet_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Feet_Weight" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl1">&nbsp;</div><div class="hl2">&nbsp;</div><div class="hl3">&nbsp;</div><div class="hl8">Average Defense</div><div class="hl9"><input type="number" name="attr_Average_Def" style="width:1.5em;" value="0" /></div></div>
+                <div class="line-small"><div class="hl20">DCV Modifier</div><div class="hl3"><input type="number" name="attr_DCV_Mod" style="width:2em;" value="-0" /></div><div class="hl8">Total Weight</div><div class="hl9"><input type="number" name="attr_Total_Weight" style="width:1.5em;" value="@{Head_Weight}+@{Hands_Weight}+@{Arms_Weight}+@{Shoulders_Weight}+@{Chest_Weight}+@{Stomach_Weight}+@{Vitals_Weight}+@{Thighs_Weight}+@{Legs_Weight}+@{Feet_Weight}" disabled="true" /></div></div>
+                <div class="line-small"><div class="hl20">Armor Notes</div><div class="hl21"><input type="text" name="attr_Armor_Notes1" style="width:18em; text-align:left; text-size:85%" value="" /></div></div>
+                <div class="line-small"><input type="text" name="attr_Armor_Notes2" style="font-size:85%; width:26.2em; text-align:left;" value="" /></div>
+            </div>
+        </div>
+        <div class="sheet-section" style="min-height:3em">
+            <div class="sheet-section-title">Combat Modifiers</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr class="sheet-text-attack">
+                        <td style="font-weight:bold">Range (m)</td>
+                        <td>0-8</td>
+                        <td>9-16</td>
+                        <td>17-32</td>
+                        <td>33-64</td>
+                        <td>65-125</td>
+                        <td>126-250</td>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td style="font-weight:bold">OCV mod</td>
+                        <td>-0</td>
+                        <td>-2</td>
+                        <td>-4</td>
+                        <td>-6</td>
+                        <td>-8</td>
+                        <td>-10</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="sheet-text-attack">
+                        <th class="sheet-text-left">Targetting Shot</th>
+                        <th>OCV</th>
+                        <th>Hit Location</th>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td class="sheet-text-left">Head Shot (Head to Shoulders)</td><td>-4</td><td>1d6+3</td>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td class="sheet-text-left">High Shot (Head to Vitals)</td><td>-2</td><td>2d6+1</td>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td class="sheet-text-left">Body Shot (Hands to Legs)</td><td>-1</td><td>2d6+4</td>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td class="sheet-text-left">Low Shot (Shoulder to Feet)</td><td>-2</td><td>2d6+7*</td>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td class="sheet-text-left">Leg Shot (Vitals to Feet)</td><td>-4</td><td>1d6+12</td>
+                    </tr>
+                    <tr class="sheet-text-attack">
+                        <td colspan="3" style="font-style:italic">* Treat a 19 as the Feet Location</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+         <div class="sheet-section" style="min-height:15.25em;">
+            <div class="sheet-section-title">Movement</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr>
+                        <th class="sheet-text-left">Type</th><th>Combat</th><th>Noncombat</th>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left">Run (12m)</td><td><input type="Text" name="attr_Run_Combat" style="width:6em; font-size:100%;" value="12m" /></td><td><input type="Text" name="attr_Run_Noncombat" style="width:6em; font-size:100%;" value="24m" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left">Swim (4m)</td><td><input type="Text" name="attr_Swim_Combat" style="width:6em; font-size:100%;" value="4m" /></td><td><input type="Text" name="attr_Swim_Noncombat" style="width:6em; font-size:100%;" value="8m" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left">H. Leap (4m)</td><td><input type="Text" name="attr_HLeap_Combat" style="width:6em; font-size:100%;" value="4m" /></td><td><input type="Text" name="attr_HLeap_Noncombat" style="width:6em; font-size:100%;" value="8m" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left">V. Leap (2m)</td><td><input type="Text" name="attr_VLeap_Combat" style="width:6em; font-size:100%;" value="2m" /></td><td><input type="Text" name="attr_VLeap_Noncombat" style="width:6em; font-size:100%;" value="4m" /></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-text-left"><input type="Text" name="attr_Spec_Move1" style="width:8em; font-size:100%;" value="" /></td><td><input type="Text" name="attr_Spec_Move1_Combat" style="width:6em; font-size:100%;" value="" /></td><td><input type="Text" name="attr_Spec_Move1_Noncombat" style="width:6em; font-size:100%;" value="" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sheet-3colrow">
+    <div class="sheet-newcol" style="width:33%; float:left;">
+        <div class="sheet-section" style="min-height:28em;">
+            <div class="sheet-section-title">Skills, Perks, & Talents</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr class="sheet-normal">
+                        <th>Cost</th>
+                        <th>Name</th>
+                        <th>Roll</th>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost1" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name1" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll1" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost2" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name2" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll2" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost3" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name3" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll3" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost4" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name4" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll4" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost5" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name5" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll5" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost6" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name6" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll6" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost7" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name7" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll7" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost8" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name8" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll8" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost9" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name9" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll9" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost10" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name10" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll10" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost11" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name11" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll11" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost12" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name12" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll12" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost13" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name13" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll13" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost14" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name14" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll14" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost15" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name15" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll15" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost16" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name16" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll16" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost17" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name17" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll17" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost18" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name18" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll18" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost19" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name19" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll19" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost20" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name20" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll20" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost21" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name21" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll21" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost22" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name22" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll22" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost23" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name23" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll23" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost24" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name24" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll24" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost25" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name25" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll25" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost26" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name26" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll26" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost27" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name27" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll27" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost28" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name28" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll28" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost29" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name29" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll29" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost30" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name30" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll30" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost31" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name31" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll31" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost32" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name32" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll32" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost33" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name33" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll33" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost34" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name34" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll34" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost35" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name35" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll35" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost36" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name36" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll36" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost37" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name37" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll37" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost38" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name38" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll38" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost39" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name39" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll39" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost40" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name40" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll40" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost41" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name41" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll41" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost42" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name42" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll42" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost43" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name43" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll43" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost44" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name44" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll44" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost45" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name45" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll45" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost46" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name46" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll46" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost47" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name47" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll47" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Cost48" value=""></td><td><input style="width:16em; text-align:left; font-size:100%" type="text" name="attr_Skill_Name48" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Skill_Roll48" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Skill_Total" value=""></td><td colspan="2" style="text-align:left; font-size:100%; font-weight:bold;"> Total Skills, Perks, & Talents Cost</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+   </div>
+    <div class="sheet-newcol" style="width:66%">
+        <div class="sheet-section" style="min-height:28em;">
+            <div class="sheet-section-title">Powers & Equipment</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr class="sheet-normal">
+                        <th>Cost</th>
+                        <th>Name</th>
+                        <th>Power/Equipment</th>
+                        <th>END</th>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost1" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name1" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow1" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END1" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost2" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name2" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow2" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END2" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost3" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name3" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow3" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END3" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost4" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name4" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow4" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END4" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost5" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name5" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow5" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END5" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost6" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name6" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow6" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END6" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost7" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name7" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow7" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END7" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost8" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name8" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow8" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END8" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost9" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name9" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow9" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END9" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost10" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name10" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow10" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END10" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost11" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name11" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow11" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END11" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost12" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name12" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow12" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END12" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost13" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name13" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow13" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END13" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost14" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name14" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow14" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END14" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost15" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name15" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow15" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END15" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost16" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name16" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow16" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END16" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost17" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name17" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow17" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END17" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost18" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name18" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow18" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END18" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost19" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name19" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow19" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END19" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost20" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name20" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow20" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END20" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost21" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name21" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow21" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END21" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost22" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name22" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow22" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END22" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost23" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name23" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow23" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END23" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost24" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name24" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow24" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END24" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost25" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name25" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow25" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END25" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost26" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name26" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow26" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END26" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost27" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name27" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow27" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END27" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost28" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name28" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow28" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END28" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost29" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name29" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow29" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END29" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost30" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name30" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow30" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END30" value=""></td>
+                    </tr>
+					<tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost31" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name31" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow31" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END31" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost32" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name32" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow32" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END32" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost33" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name33" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow33" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END33" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost34" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name34" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow34" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END34" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Cost35" value=""></td><td><input style="width:6em; text-align:left; font-size:100%" type="text" name="attr_Pow_Name35" value=""></td><td><input style="width:34em; text-align:left; font-size:100%" type="text" name="attr_Pow35" value=""></td><td><input style="width:3em; font-size:100%;" type="text" name="attr_Pow_END35" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Pow_Total" value=""></td><td colspan="3" style="text-align:left; font-size:100%; font-weight:bold;"> Total Powers/Equipment Cost</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="min-height:.4em"></div>
+        <div class="sheet-section" style="min-height:1em;">
+            <div class="sheet-section-title">Matching Complications</div>
+            <div class="sheet-subsection">
+                <table>
+                    <tr class="sheet-normal">
+                        <th>Cost</th>
+                        <th>Complication</th>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost1" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp1" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost2" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp2" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost3" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp3" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost4" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp4" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost5" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp5" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost6" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp6" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost7" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp7" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost8" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp8" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Cost9" value=""></td><td><input style="width:45em; text-align:left; font-size:100%" type="text" name="attr_Comp9" value=""></td>
+                    </tr>
+                    <tr class="normal">
+                        <td ><input style="width:3em; font-size:100%" type="number" name="attr_Comp_Total" value=""></td><td colspan="1" style="text-align:left; font-size:100%; font-weight:bold;"> Total Complication Points</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
