@@ -440,23 +440,25 @@
         </div>
     </div>
     <div class="sheet-newcol">
-        <div class="sheet-section" style="min-height:8em;">
+        <div class="sheet-section" style="min-height:10.3em;">
             <div class="sheet-section-title">Experience Points</div>
             <div class="sheet-subsection">
-                <table>
-                    <tr>
-                        <td class="sheet-text-left" style="font-weight:bold">Total Points</td><td><input type="number" name="attr_Total_Points" style="width:9em;" value="@{CHA_Total}+@{Skill_Total}+@{Pow_Total}" disabled="true" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left" style="font-weight:bold">Total Experience Points</td><td><input type="number" name="attr_XP_Total" style="width:9em;" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left">Experience Spent</td><td><input type="number" name="attr_XP_Spent" style="width:9em;" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td class="sheet-text-left">Experience Unspent</td><td><input type="number" name="attr_XP_Unspent" style="width:9em;" value="" /></td>
-                    </tr>
-                </table>
+                <div class="line">
+                    <div class="pts1" style="font-weight:bold">Total Points</div>
+                    <div class="pts2"><td><input type="number" name="attr_Total_Points" style="width:10em;" value="@{CHA_Total}+@{Skill_Total}+@{Pow_Total}" disabled="true" /></div>
+                </div>
+                <div class="line">
+                    <div class="pts1" style="font-weight:bold">Total Experience Points</div>
+                    <div class="pts2"><td><input type="number" name="attr_XP_Total" style="width:10em;" value="" /></div>
+                </div>
+                <div class="line">
+                    <div class="pts1">Experience Spent</div>
+                    <div class="pts2"><td><input type="number" name="attr_XP_Spent" style="width:10em;" value="" /></div>
+                </div>
+                <div class="line">
+                    <div class="pts1">Experience Unspent</div>
+                    <div class="pts2"><td><input type="number" name="attr_XP_Unpent" style="width:10em;" value="" /></div>
+                </div>
             </div>
         </div>
         <div class="sheet-section" style="min-height:21em;">
