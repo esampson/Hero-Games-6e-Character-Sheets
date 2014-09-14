@@ -1,131 +1,145 @@
-<div style="width:100%">
-    <div style="width:66%; float:left;">
-        <div class="line-cha"><div style="margin:0; padding:0; padding-left:1em; float:left; border:1px solid transparent">Character Name: </div><input type="text" name="attr_Name_tag" value="" style="width:30em; text-align:left"/></div>
-        <div class="line-cha"><div style="margin:0; padding:0; padding-left:1em; float:left; border:1px solid transparent">Alternate Identities: </div><input type="text" name="attr_Alt_IDs" value="" style="width:30em; text-align:left"/></div>
-        <div class="line-cha"><div style="margin:0; padding:0; padding-left:1em; float:left; border:1px solid transparent">Player Name: </div><input type="text" name="attr_Player_tag" value="" style="width:30em; text-align:left"/></div>
+<!-- width 64.6em
+590px + 10px
+9.2879px/em
+round to 9.3px/em
+-->
+<div style="width:64.52em; padding-left:1em; min-height:5em;">
+    <div style="width:66%; float:left; min-height:5em;">
+        <div class="line">
+            <div class="head1" style="width:18%;">Character Name:</div>
+            <input type="text" class="head1" name="attr_Name_tag" value="" style="width:82%;"/>
+        </div>
+        <div class="line">
+            <div class="head1" style="width:21%">Alternate Identities:</div>
+            <input type="text" class="head1" name="attr_Alt_IDs" value="" style="width:79%"/>
+        </div>
+        <div class="line">
+            <div class="head1" style="width:15%">Player Name:</div>
+            <input type="text" class="head1" name="attr_Player_tag" value="" style="width:85%"/>
+        </div>
     </div>
     <div style="width:33%; float:right; text-align:center; vertical-align:middle">
         <img src="http://www.herogames.com/forums/public/style_images/1_hero_logo.png">
     </div>
 </div>
-<div class="sheet-3colrow">
-    <div class="sheet-newcol">
-        <div class="sheet-section" style="min-height:28em;">
-            <div class="sheet-section-title">Characteristics</div>
-            <div class="sheet-subsection">
-                <div class="line-cha">
+<div style="clear:left; width:64.52em;">
+    <div class="single-col">
+        <div class="section" style="min-height:36em;">
+            <div class="section-title">Characteristics</div>
+            <div class="subsection">
+                <div class="line">
                     <div class="cha1" style="font-weight: bold">Val</div>
                     <div class="cha2" style="font-weight: bold">Char</div>
                     <div class="cha3" style="font-weight: bold">Points</div>
                     <div class="cha4" style="font-weight: bold">Roll</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_STR" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_STR" value="10">
                     <div class="cha2">STR</div>
-                    <div class="cha3"><input type="number" name="attr_STR_cost" value="0"></div>
-                    <div class="cha4"><input type="number" name="attr_STR_roll" value="round(@{STR}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                    <input type="number" class="cha3" name="attr_STR_cost" value="0">
+                    <div class="cha4"><input type="number" class="cha4" name="attr_STR_roll" value="round(@{STR}/5)+9" disabled="true" />-</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_DEX" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_DEX" value="10">
                     <div class="cha2">DEX</div>
-                    <div class="cha3"><input type="number" name="attr_DEX_cost" value="0"></div>
-                    <div class="cha4"><input type="number" name="attr_DEX_roll" value="round(@{DEX}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                    <input type="number" class="cha3" name="attr_DEX_cost" value="0">
+                    <div class="cha4"><input type="number" class="cha4" name="attr_DEX_roll" value="round(@{DEX}/5)+9" disabled="true" />-</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_CON" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_CON" value="10">
                     <div class="cha2">CON</div>
-                    <div class="cha3"><input type="number" name="attr_CON_cost" value="0"></div>
-                    <div class="cha4"><input type="number" name="attr_CON_roll" value="round(@{CON}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                    <input type="number" class="cha3" name="attr_CON_cost" value="0">
+                    <div class="cha4"><input type="number" class="cha4" name="attr_CON_roll" value="round(@{CON}/5)+9" disabled="true" />-</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_INT" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_INT" value="10">
                     <div class="cha2">INT</div>
-                    <div class="cha3"><input type="number" name="attr_INT_cost" value="0"></div>
-                    <div class="cha4"><input type="number" name="attr_INT_roll" value="round(@{INT}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                    <input type="number" class="cha3" name="attr_INT_cost" value="0">
+                    <div class="cha4"><input type="number" class="cha4" name="attr_INT_roll" value="round(@{INT}/5)+9" disabled="true" />-</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_EGO" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_EGO" value="10">
                     <div class="cha2">EGO</div>
-                    <div class="cha3"><input type="number" name="attr_EGO_cost" value="0"></div>
-                    <div class="cha4"><input type="number" name="attr_EGO_roll" value="round(@{EGO}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                    <input type="number" class="cha3" name="attr_EGO_cost" value="0">
+                    <div class="cha4"><input type="number" class="cha4" name="attr_EGO_roll" value="round(@{EGO}/5)+9" disabled="true" />-</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_PRE" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_PRE" value="10">
                     <div class="cha2">PRE</div>
-                    <div class="cha3"><input type="number" name="attr_PRE_cost" value="0"></div>
-                    <div class="cha4"><input type="number" name="attr_PRE_roll" value="round(@{PRE}/5)+9" disabled="true" style="width:1.4em"/>-</div>
+                    <input type="number" class="cha3" name="attr_PRE_cost" value="0">
+                    <div class="cha4"><input type="number" class="cha4" name="attr_PRE_roll" value="round(@{PRE}/5)+9" disabled="true" />-</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_OCV" value="3"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_OCV" value="3">
                     <div class="cha2">OCV</div>
-                    <div class="cha3"><input type="number" name="attr_OCV_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_OCV_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_DCV" value="3"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_DCV" value="3">
                     <div class="cha2">DCV</div>
-                    <div class="cha3"><input type="number" name="attr_DCV_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_DCV_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_OMCV" value="3"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_OMCV" value="3">
                     <div class="cha2">OMCV</div>
-                    <div class="cha3"><input type="number" name="attr_OMCV_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_OMCV_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_DMCV" value="3"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_DMCV" value="3">
                     <div class="cha2">DMCV</div>
-                    <div class="cha3"><input type="number" name="attr_DMCV_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_DMCV_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_SPD" value="2"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_SPD" value="2">
                     <div class="cha2">SPD</div>
-                    <div class="cha3"><input type="number" name="attr_SPD_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_SPD_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_PD" value="2"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_PD" value="2">
                     <div class="cha2">PD</div>
-                    <div class="cha3"><input type="number" name="attr_PD_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_PD_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_ED" value="2"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_ED" value="2">
                     <div class="cha2">ED</div>
-                    <div class="cha3"><input type="number" name="attr_ED_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_ED_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_REC" value="4"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_REC" value="4">
                     <div class="cha2">REC</div>
-                    <div class="cha3"><input type="number" name="attr_REC_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_REC_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_END_max" value="20"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_END_max" value="20">
                     <div class="cha2">END</div>
-                    <div class="cha3"><input type="number" name="attr_END_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_END_cost" value="0">
                     <div class="cha4">&nbsp;</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_BODY_max" value="10"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_BODY_max" value="10">
                     <div class="cha2">BODY</div>
-                    <div class="cha3"><input type="number" name="attr_BODY_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_BODY_cost" value="0">
                     <div class="cha4" style="font-weight:bold">Total Cost</div>
                 </div>
-                <div class="line-cha">
-                    <div class="cha1"><input type="number" name="attr_STUN_max" value="20"></div>
+                <div class="line">
+                    <input type="number" class="cha1" name="attr_STUN_max" value="20">
                     <div class="cha2">STUN</div>
-                    <div class="cha3"><input type="number" name="attr_STUN_cost" value="0"></div>
+                    <input type="number" class="cha3" name="attr_STUN_cost" value="0">
                     <div class="cha4"><input type="number" name="attr_CHA_Total" value="@{STR_cost}+@{DEX_cost}+@{CON_cost}+@{INT_Cost}+@{EGO_cost}+@{PRE_cost}+@{OCV_cost}+@{DCV_cost}+@{OMCV_cost}+@{DMCV_cost}+@{SPD_cost}+@{PD_cost}+@{ED_cost}+@{REC_cost}+@{END_cost}+@{BODY_cost}+@{STUN_cost}" disabled="true" /></div>
                 </div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:31.75em;">
-            <div class="sheet-section-title">Attacks & Maneuvers</div>
-            <div class="sheet-subsection">
+        <div class="section" style="min-height:38em;">
+            <div class="section-title">Attacks & Maneuvers</div>
+            <div class="subsection">
                 <div class="line-am">
                     <div class="am1" style="font-weight: bold">Maneuver</div>
                     <div class="am2" style="font-weight: bold">Phase</div>
@@ -171,8 +185,8 @@
                 <div class="line-am">
                     <div class="am1">Grab By</div>
                     <div class="am2">&#189;†</div>
-                    <div class="am3">+0</div>
-                    <div class="am4">+0</div>
+                    <div class="am3">-3</div>
+                    <div class="am4">-4</div>
                     <div class="am5">Move & Grab; +(v/10) to STR</div>
                 </div>
                 <div class="line-am">
@@ -239,87 +253,73 @@
                     <div class="am5">Knock target prone</div>
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man1" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase1" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV1" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV1" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff1" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man1" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase1" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV1" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV1" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff1" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man2" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase2" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV2" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV2" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff2" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man2" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase2" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV2" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV2" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff2" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man3" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase3" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV3" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV3" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff3" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man3" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase3" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV3" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV3" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff3" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man4" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase4" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV4" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV4" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff4" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man4" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase4" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV4" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV4" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff4" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man5" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase5" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV5" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV5" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff5" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man5" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase5" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV5" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV5" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff5" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man6" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase6" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV6" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV6" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff6" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man6" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase6" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV6" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV6" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff6" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man7" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase7" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV7" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV7" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff7" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man7" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase7" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV7" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV7" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff7" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man8" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase8" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV8" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV8" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff8" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man8" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase8" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV8" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV8" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff8" value="" />
                 </div>
                 <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man9" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase9" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV9" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV9" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff9" value="" /></div>
-                </div>
-                <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man10" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase10" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV10" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV10" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff10" value="" /></div>
-                </div>
-                <div class="line-am">
-                    <div class="am1"><input type="text" class="am1" name="attr_MA_Man11" value="" /></div>
-                    <div class="am2"><input type="text" class="am2" name="attr_MA_Phase11" value="" /></div>
-                    <div class="am3"><input type="text" class="am3" name="attr_MA_OCV11" value="" /></div>
-                    <div class="am4"><input type="text" class="am4" name="attr_MA_DCV11" value="" /></div>
-                    <div class="am5"><input type="text" class="am5" name="attr_MA_Eff11" value="" /></div>
+                    <input type="text" class="am1" name="attr_MA_Man9" value="" />
+                    <input type="text" class="am2" name="attr_MA_Phase9" value="" />
+                    <input type="text" class="am3" name="attr_MA_OCV9" value="" />
+                    <input type="text" class="am4" name="attr_MA_DCV9" value="" />
+                    <input type="text" class="am5" name="attr_MA_Eff9" value="" />
                 </div>
             </div>
         </div>
     </div>
-    <div class="sheet-newcol">
-        <div class="sheet-section" style="min-height:11em;">
+    <div class="single-col">
+        <div class="sheet-section" style="min-height:10em;">
             <div class="sheet-section-title">Current Status</div>
             <div class="sheet-subsection">
                 <div class="line">
@@ -329,68 +329,68 @@
                 </div>
                 <div class="line">
                     <div class="cs1">END</div>
-                    <div class="cs2"><input style="width:3em;" type="number" name="attr_END_max_show" disabled="true" value="@{END|max}" /></div>
-                    <div class="cs2"><input style="width:3em;" type="number" name="attr_END_show" disabled="true"  value="@{END}" /></div>
+                    <input type="number" class="cs2" name="attr_END_max_show" disabled="true" value="@{END|max}" />
+                    <input type="number" class="cs2" name="attr_END_show" disabled="true"  value="@{END}" />
                 </div>
                 <div class="line">
                     <div class="cs1">BODY</div>
-                    <div class="cs2"><input style="width:3em;" type="number" name="attr_BODY_max_show" disabled="true" value="@{BODYax}" /></div>
-                    <div class="cs2"><input style="width:3em;" type="number" name="attr_BODY_show" disabled="true"  value="@{BODY}" /></div>
+                    <input type="number" class="cs2" name="attr_BODY_max_show" disabled="true" value="@{BODY|max}" />
+                    <input type="number" class="cs2" name="attr_BODY_show" disabled="true"  value="@{BODY}" />
                 </div>
                 <div class="line">
                     <div class="cs1">STUN</div>
-                    <div class="cs2"><input style="width:3em;" type="number" name="attr_STUN_max_show" disabled="true" value="@{STUN|max}" /></div>
-                    <div class="cs2"><input style="width:3em;" type="number" name="attr_STUN_show" disabled="true"  value="@{STUN}" /></div>
+                    <input type="number" class="cs2" name="attr_STUN_max_show" disabled="true" value="@{STUN|max}" />
+                    <input type="number" class="cs2" name="attr_STUN_show" disabled="true"  value="@{STUN}" />
                 </div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:15.6em;">
+        <div class="sheet-section" style="min-height:24.7em;">
             <div class="sheet-section-title">Vital Information</div>
             <div class="sheet-subsection">
                 <div class="line">
-                    <div class="float-left" style="width:12em;"><span style="font-weight:bold">HTH damage</span> (STR/5)d6 </div>
-                    <input type="text" name="attr_HTH" style="width:10em; text-align:left" value="" />
+                    <div class="vs1" style="width:55%;"><span style="font-weight:bold">HTH damage</span> (STR/5)d6 </div>
+                    <input type="text" class="vs1" name="attr_HTH" style="width:45%; text-align:center" value="" />
                 </div>
                 <div class="line">
-                    <div class="float-left" style="width:2em">Lift</div>
-                    <div class="float-left" style="width:10em"><input type="text" name="attr_Lift" style="width:10em" value="" /></div>
-                    <div class="float-left" style="width:7em">STR END Cost </div>
-                    <div class="float-left" style="width:3em"><input type="text" name="attr_STR_END" style="width:3em;" value="" /></div>
+                    <div class="vs1" style="width:9%">Lift</div>
+                    <input type="text" class="vs1" name="attr_Lift" style="width:45%; text-align:center" value="" />
+                    <div class="vs1" style="width:32%em">STR END Cost </div>
+                    <input type="text" class="vs1" name="attr_STR_END" style="width:14%; text-align:center;" value="" />
                 </div>
                 <div class="line">
-                    <div class="float-left" style="width:3em; font-weight:bold">Phase</div>
-                    <input type="text" name="attr_Phases_display" style="width:19em; text-align:center; font-size:100%; margin-top:-.3em;" value=""  />
+                    <div class="vs1" style="width:14%; font-weight:bold">Phase</div>
+                    <input type="text" class="vs1" name="attr_Phases_display" style="width:86%; text-align:center; border-bottom:none" value="1   2   3   4   5   6   7   8   9   10   11   12"  />
                 </div>
                 <div class="line">
-                    <div class="float-left" style="width:5em; font-weight:bold">Base OCV</div>
-                    <input type="text" name="attr_OCV_show" style="width:6em" value="" />
-                    <div class="float-left" style="width:5em; font-weight:bold">Base DCV</div>
-                    <input type="text" name="attr_DCV_show" style="width:6em;" value="" />
+                    <div class="vs1" style="width:23%; font-weight:bold">Base OCV</div>
+                    <input type="text" class="vs1" name="attr_OCV_show" style="width:27%; text-align:center;" value="" />
+                    <div class="vs1" style="width:23%; font-weight:bold">Base DCV</div>
+                    <input type="text" class="vs1" name="attr_DCV_show" style="width:27%; text-align:center;" value="" />
                 </div>
                 <div class="line">
-                    <div class="float-left" style="width:10em; font-weight:bold">Combat Skill Levels</div>
-                    <input type="text" name="attr_CSL_show1" style="width:12em; text-align:left;" value="" />
+                    <div class="vs1" style="width:45%; font-weight:bold">Combat Skill Levels</div>
+                    <input type="text" class="vs1" name="attr_CSL_show1" style="width:55%;" value="" />
                 </div>
                 <div class="line">
-                    <input type="text" name="attr_CSL_show2" style="width:22em; text-align:left;" value="" />
+                    <input type="text" class="vs1" name="attr_CSL_show2" style="width:100%;" value="" />
                 </div>
                 <div class="line">
-                    <input type="text" name="attr_CSL_show3" style="width:22em; text-align:left;" value="" />
+                    <input type="text" class="vs1" name="attr_CSL_show3" style="width:100%;" value="" />
                 </div>
                 <div class="line">
-                    <input type="text" name="attr_CSL_show4" style="width:22em; text-align:left;" value="" />
+                    <input type="text" class="vs1" name="attr_CSL_show4" style="width:100%;" value="" />
                 </div>
                 <div class="line">
-                    <input type="text" name="attr_CSL_show5" style="width:22em; text-align:left;" value="" />
+                    <input type="text" class="vs1" name="attr_CSL_show5" style="width:100%;" value="" />
                 </div>
                 <div class="line">
-                    <div class="float-left" style="width:13em"><span style="font-weight:bold">Presence Attack</span> (PRE/5)d6 </div>
-                    <input type="text" name="attr_PRE_Attack" style="width:9em" value="" />
+                    <div class="vs1" style="width:65%"><span style="font-weight:bold">Presence Attack</span> (PRE/5)d6 </div>
+                    <input type="text" class="vs1" name="attr_PRE_Attack" style="width:35%; text-align:center" value="" />
                 </div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:17.6em;">
-            <div class="sheet-section-title">Defenses</div>
+        <div class="sheet-section" style="min-height:21.9em;">
+             <div class="sheet-section-title">Defenses</div>
             <div class="sheet-subsection">
                <div class="line">
                     <div class="def1" style=" text-align:center">Type</div>
@@ -398,91 +398,247 @@
                 </div>
                 <div class="line">
                     <div class="def1">Normal PD</div>
-                    <div class="def2"><input type="text" name="attr_Normal_PD" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_Normal_PD" value="" />
                 </div>
                 <div class="line">
                     <div class="def1">Resistant PD</div>
-                    <div class="def2"><input type="text" name="attr_Resist_PD" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_Resist_PD" value="" />
                 </div>
                 <div class="line">
                     <div class="def1">Normal ED</div>
-                    <div class="def2"><input type="text" name="attr_Normal_ED" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_Normal_ED" value="" />
                 </div>
                 <div class="line">
                     <div class="def1">Resistant ED</div>
-                    <div class="def2"><input type="text" name="attr_Resist_ED" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_Resist_ED" value="" />
                 </div>
                 <div class="line">
                     <div class="def1">Mental Defense</div>
-                    <div class="def2"><input type="text" name="attr_MD" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_MD" value="" />
                 </div>
                 <div class="line">
                     <div class="def1">Power Defense</div>
-                    <div class="def2"><input type="text" name="attr_PowD" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_PowD" value="" />
                 </div>
                 <div class="line">
                     <div class="def1">Flash Defense</div>
-                    <div class="def2"><input type="text" name="attr_FlashD" style="width:14em;" value="" /></div>
+                    <input type="text" class="def2" name="attr_FlashD" value="" />
                 </div>
-                <div class="line"><input type="text" name="attr_SpecDef1" style="width:22em; text-align:left;" value="" /></div>
-                <div class="line"><input type="text" name="attr_SpecDef2" style="width:22em; text-align:left;" value="" /></div>
+                <div class="line">
+                    <input type="text" class="def1" name="attr_SpecDef1" value="" />
+                    <input type="text" class="def2" name="attr_SpecDef1D" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="def1" name="attr_SpecDef2" value="" />
+                    <input type="text" class="def2" name="attr_SpecDef2D" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="def1" name="attr_SpecDef3" value="" />
+                    <input type="text" class="def2" name="attr_SpecDef3D" value="" />
+                </div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:9.75em;">
+        <div class="sheet-section" style="min-height:14.8em;">
             <div class="sheet-section-title">Senses</div>
             <div class="sheet-subsection">
-                <div class="line"><div class="float-left" style="width:13em"><span style="font-weight:bold">Perception Roll</span> (9+INT/5)</div> <input type="text" name="attr_Per" style="width:9em;" value="" /></div>
-                <div class="line"><div class="float-left" style="width:16em"><span style="font-weight:bold">Enhanced and Unusual Senses</span></div><input type="text" name="attr_EnhancedSense1" style="width:6em; text-align:left;" value="" /></div>
-                <div class="line"><input type="text" name="attr_EnhancedSense2" style="width:22em; text-align:left;" value="" /></div>
-                <div class="line"><input type="text" name="attr_EnhancedSense3" style="width:22em; text-align:left;" value="" /></div>
-                <div class="line"><input type="text" name="attr_EnhancedSense4" style="width:22em; text-align:left;" value="" /></div>
+                <div class="line">
+                    <div class="es1" style="width:59%"><span style="font-weight:bold">Perception Roll</span> (9+INT/5)</div> 
+                    <input type="text" class="es1" name="attr_Per" style="width:41%;" value="" />
+                    </div>
+                <div class="line">
+                    <div class="es1" style="width:73%"><span style="font-weight:bold">Enhanced and Unusual Senses</span></div>
+                <div class="line">
+                    <input type="text" class="es1" name="attr_EnhancedSense1" style="width:100%; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="es1" name="attr_EnhancedSense2" style="width:100%; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="es1" name="attr_EnhancedSense3" style="width:100%; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="es1" name="attr_EnhancedSense4" style="width:100%; text-align:left;" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="es1" name="attr_EnhancedSense5" style="width:100%; text-align:left;" value="" />
+                </div>
             </div>
         </div>
+        <!--
+        <div class="sheet-section" style="min-height:22.4em;">
+           
+        </div>
+        <div class="sheet-section" style="min-height:14.9em;">
+
+        </div>
+        -->
     </div>
-    <div class="sheet-newcol">
-        <div class="sheet-section" style="min-height:11em;">
+    </div>
+    <div class="single-col">
+        <div class="sheet-section" style="min-height:10em;">
             <div class="sheet-section-title">Experience Points</div>
             <div class="sheet-subsection">
                 <div class="line">
                     <div class="pts1" style="font-weight:bold">Total Points</div>
-                    <div class="pts2"><td><input type="number" name="attr_Total_Points" style="width:10em;" value="@{CHA_Total}+@{Skill_Total}+@{Pow_Total}" disabled="true" /></div>
+                    <input type="number" class="pts2" name="attr_Total_Points" value="@{CHA_Total}+@{Skill_Total}+@{Pow_Total}" disabled="true" />
                 </div>
                 <div class="line">
                     <div class="pts1" style="font-weight:bold">Total Experience Points</div>
-                    <div class="pts2"><td><input type="number" name="attr_XP_Total" style="width:10em;" value="" /></div>
+                    <input type="number" class="pts2" name="attr_XP_Total"  value="" />
                 </div>
                 <div class="line">
                     <div class="pts1">Experience Spent</div>
-                    <div class="pts2"><td><input type="number" name="attr_XP_Spent" style="width:10em;" value="" /></div>
+                    <input type="number" class="pts2" name="attr_XP_Spent" value="" />
                 </div>
                 <div class="line">
                     <div class="pts1">Experience Unspent</div>
-                    <div class="pts2"><td><input type="number" name="attr_XP_Unpent" style="width:10em;" value="" /></div>
+                    <input type="number" class="pts2" name="attr_XP_Unpent" value="" />
                 </div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:21em;">
+        <div class="sheet-section" style="min-height:29.6em;">
             <div class="sheet-section-title">Hit Location Chart</div>
             <div class="sheet-subsection">
-                <div class="line-small"><div class="hl1" style="font-weight:bold; line-height:1em">3d6 Roll</div><div class="hl2" style="font-weight:bold; height:2em; vertical-align:middle">Location</div><div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Stun<br>X</div><div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">N<br>Stun</div><div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Body<br>X</div><div class="hl4" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">To<br>Hit</div><div class="hl7" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Defense/<br>Weight</div></div>
-                <div class="line-small" style="line-height:.5em">&nbsp;</div>
-                <div class="line-small"><div class="hl1">3-5</div><div class="hl2">Head</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Head_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Head_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">6</div><div class="hl2">Hands</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Hands_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Hands_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">7-8</div><div class="hl2">Arms</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Arms_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Arms_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">9</div><div class="hl2">Shoulder</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Shoulders_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Shoulders_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">10-11</div><div class="hl2">Chest</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Chest_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Chest_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">12</div><div class="hl2">Stomach</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Stomach_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Stomach_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">13</div><div class="hl2">Vitals</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Vitals_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Vitals_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">14</div><div class="hl2">Thighs</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Thighs_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Thighs_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">15-16</div><div class="hl2">Legs</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Legs_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Legs_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">17-18</div><div class="hl2">Feet</div><div class="hl3">x5</div><div class="hl3">x2</div><div class="hl3">x2</div><div class="hl4">-8</div><div class="hl5"><input type="number" name="attr_Feet_Def" style="width:1.5em;" value="0" /></div><div class="hl6">/</div><div class="hl5"><input type="number" name="attr_Feet_Weight" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl1">&nbsp;</div><div class="hl2">&nbsp;</div><div class="hl3">&nbsp;</div><div class="hl8">Average Defense</div><div class="hl9"><input type="number" name="attr_Average_Def" style="width:1.5em;" value="0" /></div></div>
-                <div class="line-small"><div class="hl20">DCV Modifier</div><div class="hl3"><input type="number" name="attr_DCV_Mod" style="width:2em;" value="-0" /></div><div class="hl8">Total Weight</div><div class="hl9"><input type="number" name="attr_Total_Weight" style="width:1.5em;" value="@{Head_Weight}+@{Hands_Weight}+@{Arms_Weight}+@{Shoulders_Weight}+@{Chest_Weight}+@{Stomach_Weight}+@{Vitals_Weight}+@{Thighs_Weight}+@{Legs_Weight}+@{Feet_Weight}" disabled="true" /></div></div>
-                <div class="line-small"><div class="hl20">Armor Notes</div><div class="hl21"><input type="text" name="attr_Armor_Notes1" style="width:18em; text-align:left; text-size:85%" value="" /></div></div>
-                <div class="line-small"><input type="text" name="attr_Armor_Notes2" style="font-size:85%; width:26.2em; text-align:left;" value="" /></div>
+                <div class="linel">
+                    <div class="hl1" style="font-weight:bold; line-height:1em">3d6 Roll</div>
+                    <div class="hl2" style="font-weight:bold; height:2em; vertical-align:middle">Location</div>
+                    <div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Stun<br>X</div>
+                    <div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">N<br>Stun</div>
+                    <div class="hl3" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Body<br>X</div>
+                    <div class="hl4" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">To<br>Hit</div>
+                    <div class="hl7" style="font-weight:bold; height:2em; vertical-align:middle; line-height:1em">Defense/<br>Weight</div>
+                </div>
+                <div class="line">
+                    <div class="hl1">3-5</div>
+                    <div class="hl2">Head</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Head_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Head_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">6</div>
+                    <div class="hl2">Hands</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Hands_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5"  name="attr_Hands_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">7-8</div>
+                    <div class="hl2">Arms</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Arms_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Arms_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">9</div>
+                    <div class="hl2">Shoulder</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Shoulders_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Shoulders_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">10-11</div>
+                    <div class="hl2">Chest</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Chest_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Chest_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">12</div>
+                    <div class="hl2">Stomach</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Stomach_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Stomach_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">13</div><div class="hl2">Vitals</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Vitals_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Vitals_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">14</div>
+                    <div class="hl2">Thighs</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Thighs_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Thighs_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">15-16</div>
+                    <div class="hl2">Legs</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Legs_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Legs_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">17-18</div>
+                    <div class="hl2">Feet</div>
+                    <div class="hl3">x5</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl3">x2</div>
+                    <div class="hl4">-8</div>
+                    <input type="number" class="hl5" name="attr_Feet_Def" value="0" />
+                    <div class="hl6">/</div>
+                    <input type="number" class="hl5" name="attr_Feet_Weight" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl1">&nbsp;</div>
+                    <div class="hl2">&nbsp;</div>
+                    <div class="hl3">&nbsp;</div>
+                    <div class="hl8">Average Defense</div>
+                    <input type="number" class="hl9" name="attr_Average_Def" value="0" />
+                </div>
+                <div class="line">
+                    <div class="hl20">DCV Modifier</div>
+                    <input type="number" class="hl3" name="attr_DCV_Mod" value="-0" />
+                    <div class="hl8">Total Weight</div>
+                    <input type="number" class="hl9" name="attr_Total_Weight" value="@{Head_Weight}+@{Hands_Weight}+@{Arms_Weight}+@{Shoulders_Weight}+@{Chest_Weight}+@{Stomach_Weight}+@{Vitals_Weight}+@{Thighs_Weight}+@{Legs_Weight}+@{Feet_Weight}" disabled="true" />
+                </div>
+                <div class="line">
+                    <div class="hl20">Armor Notes</div>
+                    <input type="text" class="hl21" name="attr_Armor_Notes1" value="" />
+                </div>
+                <div class="line">
+                    <input type="text" class="hl22" name="attr_Armor_Notes2" value="" /></div>
             </div>
         </div>
-        <div class="sheet-section" style="min-height:10.75em">
+        <div class="sheet-section" style="min-height:13em;">
             <div class="sheet-section-title">Combat Modifiers</div>
             <div class="sheet-subsection">
                 <div class="line">
@@ -538,7 +694,7 @@
                 </div>
             </div>
         </div>
-         <div class="sheet-section" style="min-height:14.25em;">
+        <div class="sheet-section" style="min-height:18.8em;">
             <div class="sheet-section-title">Movement</div>
             <div class="sheet-subsection">
                 <div class="line">
@@ -548,41 +704,50 @@
                 </div>
                 <div class="line">
                     <div class="mv1">Run (12m)</div>
-                    <div class="mv2"><input type="Text" name="attr_Run_Combat" style="width:6.7em;" value="12m" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Run_Noncombat" style="width:6.7em;" value="24m" /></div>
+                    <input type="Text" class="mv2" name="attr_Run_Combat" value="12m" />
+                    <input type="Text" class="mv2" name="attr_Run_Noncombat" value="24m" />
                 </div>
                 <div class="line">
                     <div class="mv1">Swim (4m)</div>
-                    <div class="mv2"><input type="Text" name="attr_Swim_Combat" style="width:6.7em;" value="4m" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Swim_Noncombat" style="width:6.7em;" value="8m" /></div>
+                    <input type="Text" class="mv2" name="attr_Swim_Combat" value="4m" />
+                    <input type="Text" class="mv2" name="attr_Swim_Noncombat" value="8m" />
                 </div>
                 <div class="line">
                     <div class="mv1">H. Leap (4m)</div>
-                    <div class="mv2"><input type="Text" name="attr_HLeap_Combat" style="width:6.7em;" value="4m" /></div>
-                    <div class="mv2"><input type="Text" name="attr_HLeap_Noncombat" style="width:6.7em;" value="8m" /></div>
+                    <input type="Text" class="mv2" name="attr_HLeap_Combat" value="4m" />
+                    <input type="Text" class="mv2" name="attr_HLeap_Noncombat" value="8m" />
                 </div>
                 <div class="line">
                     <div class="mv1">V. Leap (2m)</div>
-                    <div class="mv2"><input type="Text" name="attr_VLeap_Combat" style="width:6.7em;" value="2m" /></div>
-                    <div class="mv2"><input type="Text" name="attr_VLeap_Noncombat" style="width:6.7em;" value="4m" /></div>
+                    <input type="Text" class="mv2" name="attr_VLeap_Combat" value="2m" />
+                    <input type="Text" class="mv2" name="attr_VLeap_Noncombat" value="4m" />
                 </div>
                 <div class="line">
-                    <div class="mv1"><input type="Text" name="attr_Spec_Move1" style="width:8.7em;" value="" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Spec_Move1_Combat" style="width:6.7em;" value="" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Spec_Move1_Noncombat" style="width:6.7em;" value="" /></div>
+                    <input type="Text" class="mv1" name="attr_Spec_Move1" value="" />
+                    <input type="Text" class="mv2" name="attr_Spec_Move1_Combat" value="" />
+                    <input type="Text" class="mv2" name="attr_Spec_Move1_Noncombat" value="" />
                 </div>
                 <div class="line">
-                    <div class="mv1"><input type="Text" name="attr_Spec_Move2" style="width:8.7em;" value="" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Spec_Move2_Combat" style="width:6.7em;" value="" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Spec_Move2_Noncombat" style="width:6.7em;" value="" /></div>
+                    <input type="Text" class="mv1" name="attr_Spec_Move2" value="" />
+                    <input type="Text" class="mv2" name="attr_Spec_Move2_Combat" value="" />
+                    <input type="Text" class="mv2" name="attr_Spec_Move2_Noncombat" value="" />
                 </div>
                 <div class="line">
-                    <div class="mv1"><input type="Text" name="attr_Spec_Move3" style="width:8.7em;" value="" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Spec_Move3_Combat" style="width:6.7em;" value="" /></div>
-                    <div class="mv2"><input type="Text" name="attr_Spec_Move3_Noncombat" style="width:6.7em" value="" /></div>
+                    <input type="Text" class="mv1" name="attr_Spec_Move3" value="" />
+                    <input type="Text" class="mv2" name="attr_Spec_Move3_Combat" value="" />
+                    <input type="Text" class="mv2" name="attr_Spec_Move3_Noncombat" value="" />
+                </div>
+                <div class="line">
+                    <div class="mv1">Movement SFX</div>
+                    <input type="Text" class="mv3" name="attr_Move_SFX" value="" />
                 </div>
             </div>
         </div>
+        <!--
+         <div class="sheet-section" style="min-height:14.25em;">
+            
+        </div>
+        -->
     </div>
 </div>
 <div class="sheet-3colrow">
