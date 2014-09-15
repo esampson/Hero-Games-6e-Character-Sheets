@@ -1,8 +1,3 @@
-td, th
-{
-    border:.1em solid green;
-}
-
 input[type=number]
 {
     padding: 0;
@@ -13,6 +8,7 @@ input[type=number]
     font-size:100%; 
     text-align: center;
     border-bottom: .1em solid black;
+    -moz-appearance:textfield;
 }
 
 input[type=text]
@@ -34,46 +30,44 @@ input[type=number]::-webkit-outer-spin-button
     margin: 0; 
 }
 
-input[type=number] 
-{
-    -moz-appearance:textfield;
+div.sheet-single-col {
+    padding:none; 
+    margin:none;
+    width:21.5em;
+    float:left;
 }
 
-div.sheet-line, div.sheet-line-small, div.sheet-line-cha, div.sheet-line-am
-{
-    border:none; 
-    padding:0; 
-    clear: left;
+div.sheet-section {
+    border: .2em solid black;
+    border-radius: 1em;
+    /* font-size: 85%; */
+    margin-bottom: 1em;
+    margin-left:.5em;
+    margin-right: .5em;
+}
+
+div.sheet-subsection {
+    padding-top: 0em;
+    padding-left:.5em;
+    padding-right: .5em;
+    padding-bottom: 0;
+    padding-top:0em;
+}
+
+div.sheet-section-title {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: .2em solid black;
+    margin-bottom: 1em;
 }
 
 div.sheet-line
 {
+    border:none; 
+    padding:0; 
+    clear: left;
     margin-top: -.5em;
-}
-
-div.sheet-line-cha
-{
-    padding-top:.3em
-} 
-
-div.sheet-line-am
-{
-    margin-top: -.5em;
-    margin-bottom: -.95em;
-}
-
-div.sheet-float-left
-{
-    float:left; 
-    border:.1em solid transparent;
-    margin-bottom: -.5em;
-}
-
-div.sheet-float-left2
-{
-    float:left; 
-    border:none;
-    margin-bottom: -.5em;
 }
 
 .sheet-head1, .input[type=text].sheet-head1
@@ -313,18 +307,16 @@ div.sheet-pts2, input[type=number].sheet-pts2
 }
 
 div.sheet-hl1, div.sheet-hl2, div.sheet-hl3, div.sheet-hl4, div.sheet-hl5, div.sheet-hl6, div.sheet-hl7, div.sheet-hl8,
-    div.sheet-hl9, div.sheet-hl10, div.sheet-hl11, div.sheet-hl12, div.sheet-hl13, div.sheet-hl14, div.sheet-hl15,
-    div.sheet-hl16, div.sheet-hl17, div.sheet-hl18, div.sheet-hl19, div.sheet-hl20, div.sheet-hl21,
-    input[type=number].sheet-hl3, input[type=number].sheet-hl5, input[type=number].sheet-hl9, input[type=text].sheet-hl21,
-    input[type=text].sheet-hl22
+    div.sheet-hl9, div.sheet-hl10, div.sheet-hl11, div.sheet-hl12,
+    input[type=number].sheet-hl3, input[type=number].sheet-hl5, input[type=number].sheet-hl9, input[type=text].sheet-hl11,
+    input[type=text].sheet-hl12
 {
     margin-bottom: .3em;
     font-size:80%;
 }
 
 div.sheet-hl1, div.sheet-hl2, div.sheet-hl3, div.sheet-hl4, div.sheet-hl5, div.sheet-hl6, div.sheet-hl7, div.sheet-hl8,
-    div.sheet-hl9, div.sheet-hl10, div.sheet-hl11, div.sheet-hl12, div.sheet-hl13, div.sheet-hl14, div.sheet-hl15,
-    div.sheet-hl16, div.sheet-hl17, div.sheet-hl18, div.sheet-hl19, div.sheet-hl20, div.sheet-hl21
+    div.sheet-hl9, div.sheet-hl10, div.sheet-hl11, div.sheet-hl12
 {
     border-bottom: .1em solid transparent;
     border-top: .1em solid transparent;
@@ -393,7 +385,7 @@ div.sheet-hl9, input[type=number].sheet-hl9
     text-align:center;
 }
 
-div.sheet-hl20
+div.sheet-hl10
 {
     float:left; 
     width:30%;
@@ -401,7 +393,7 @@ div.sheet-hl20
     font-weight:bold;
 }
 
-div.sheet-hl21, input[type=text].sheet-hl21
+div.sheet-hl11, input[type=text].sheet-hl11
 {
     float:left; 
     width:70%;
@@ -409,7 +401,7 @@ div.sheet-hl21, input[type=text].sheet-hl21
     border-bottom:.1em solid transparent;
 }
 
-div.sheet-hl21, input[type=text].sheet-hl22
+div.sheet-hl12, input[type=text].sheet-hl12
 {
     float:left; 
     width:100%;
@@ -609,91 +601,4 @@ div.sheet-comp2, input[type=text].sheet-comp2
     float:left; 
     width:93%;
     text-align:left;
-}
-
-tr.sheet-normal {
-    border:none;
-}
-
-div.sheet-single-col {
-    padding:none; 
-    margin:none;
-    width:21.5em;
-    float:left;
-}
-
-div.sheet-section {
-    border: .2em solid black;
-    border-radius: 1em;
-    /* font-size: 85%; */
-    margin-bottom: 1em;
-    margin-left:.5em;
-    margin-right: .5em;
-}
-
-div.sheet-subsection {
-    padding-top: 0em;
-    padding-left:.5em;
-    padding-right: .5em;
-    padding-bottom: 0;
-    padding-top:0em;
-}
-
-div.sheet-section-title {
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-    border-bottom: .2em solid black;
-    margin-bottom: 1em;
-}
-
-table { 
-    border-collapse: collapse;
-    width: 100%;
-    margin: none;
-    padding: none;
-    text-align: center;
-}
-
-th.sheet-text-left
-{
-    margin: none;
-    padding: none;
-    text-align: left;
-}
-
-td.sheet-header
-{
-    width: 66%;
-    text-align: left;
-    padding-left:1em;
-}
-
-td.sheet-logo
-{
-    text-align: center;
-    width: 33%;
-    margin: none;
-    padding: none;
-}
-
-td.sheet-text-left
-{
-    margin: none;
-    padding: none;
-    text-align: left;
-}
-
-tr.sheet-text-attack
-{
-    line-height: 1em;
-    font-size: 0.8em;
-    margin: none;
-}
-
-input.sheet-text-attack
-{
-    line-height: 1em;
-    font-size: 1em;
-    margin: none;
 }
