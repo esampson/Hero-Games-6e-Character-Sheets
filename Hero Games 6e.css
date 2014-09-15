@@ -145,15 +145,15 @@ div.sheet-am1, div.sheet-am2, div.sheet-am3, div.sheet-am4, div.sheet-am5, input
     input[type=text].sheet-am2, input[type=text].sheet-am3, input[type=text].sheet-am4, 
     input[type=text].sheet-am5
 {
-    margin-bottom: .05em; /* This is the key */
-    font-size:65%;
+    margin-bottom: -.15em; /* This is the key */
+    font-size:80%;
+    letter-spacing:-.1em
 }
 
-input[type=text].sheet-am1, 
-    input[type=text].sheet-am2, input[type=text].sheet-am3, input[type=text].sheet-am4, 
+input[type=text].sheet-am1, input[type=text].sheet-am2, input[type=text].sheet-am3, input[type=text].sheet-am4, 
     input[type=text].sheet-am5
 {
-    border-bottom:.15em solid black;
+
 }
 div.sheet-am1, div.sheet-am2, div.sheet-am3, div.sheet-am4, div.sheet-am5
 {
@@ -240,7 +240,6 @@ div.sheet-def1, div.sheet-def2, input[type=text].sheet-def2, input[type=text].sh
 {
     margin-bottom: .2em; /* This is the key */
     font-size:100%;
-    font-weight:bold;
 }
 
 div.sheet-def1, div.sheet-def2
@@ -254,6 +253,7 @@ div.sheet-def1, input[type=text].sheet-def1
     float:left; 
     width:40%;
     text-align:left;
+    font-weight:bold;
 }
 
 div.sheet-def2, input[type=text].sheet-def2
@@ -509,6 +509,106 @@ div.sheet-mv3, input[type=text].sheet-mv3
     float:left; 
     width:60%;
     text-align:center;
+}
+
+div.sheet-sk1, div.sheet-sk2, div.sheet-sk3, input[type=number].sheet-sk1, input[type=text].sheet-sk2, input[type=text].sheet-sk3
+{
+    margin-bottom: -.17em; /* This is the key */
+    font-size:100%;
+}
+
+div.sheet-sk1, div.sheet-sk2, div.sheet-sk3
+{
+    border-bottom: .1em solid transparent;
+    border-top: .1em solid transparent;
+}
+
+div.sheet-sk1, input[type=number].sheet-sk1
+{
+    float:left; 
+    width:14%;
+    text-align:center;
+}
+
+div.sheet-sk2, input[type=text].sheet-sk2
+{
+    float:left; 
+    width:72%;
+    text-align:center;
+}
+
+div.sheet-sk3, input[type=text].sheet-sk3
+{
+    float:left; 
+    width:14%;
+    text-align:center;
+}
+
+div.sheet-pow1, div.sheet-pow2, div.sheet-pow3, div.sheet-pow4, input[type=number].sheet-pow1, input[type=text].sheet-pow2, 
+    input[type=text].sheet-pow3, input[type=text].sheet-pow4
+{
+    margin-bottom: -.17em; /* This is the key */
+    font-size:100%;
+}
+
+div.sheet-pow1, div.sheet-pow2, div.sheet-pow3, div.sheet-pow4
+{
+    border-bottom: .1em solid transparent;
+    border-top: .1em solid transparent;
+}
+
+div.sheet-pow1, input[type=number].sheet-pow1
+{
+    float:left; 
+    width:7%;
+    text-align:center;
+}
+
+div.sheet-pow2, input[type=text].sheet-pow2
+{
+    float:left; 
+    width:13%;
+    text-align:left;
+}
+
+div.sheet-pow3, input[type=text].sheet-pow3
+{
+    float:left; 
+    width:74%;
+    text-align:left;
+}
+
+div.sheet-pow4, input[type=text].sheet-pow4
+{
+    float:left; 
+    width:6%;
+    text-align:center;
+}
+
+div.sheet-comp1, div.sheet-comp2, input[type=number].sheet-comp1, input[type=text].sheet-comp2
+{
+    margin-bottom: -.17em; /* This is the key */
+    font-size:100%;
+}
+
+div.sheet-comp1, div.sheet-comp2
+{
+    border-bottom: .1em solid transparent;
+    border-top: .1em solid transparent;
+}
+
+div.sheet-comp1, input[type=number].sheet-comp1
+{
+    float:left; 
+    width:7%;
+    text-align:center;
+}
+
+div.sheet-comp2, input[type=text].sheet-comp2
+{
+    float:left; 
+    width:93%;
+    text-align:left;
 }
 
 tr.sheet-normal {
